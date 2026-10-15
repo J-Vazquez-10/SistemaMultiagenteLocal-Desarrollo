@@ -37,7 +37,7 @@ public class HerramientasDesarrollo {
         }
     }
 
-    @Tool("Crea un archivo nuevo o sobrescribe uno existente con el código proporcionado.")
+    /*@Tool("Crea un archivo nuevo o sobrescribe uno existente con el código proporcionado.")
     public String escribirArchivo(
             @P("La ruta relativa del archivo, ej: src/main/java/Prueba.java") String ruta,
             @P("El contenido exacto a guardar") String contenido) {
@@ -54,9 +54,9 @@ public class HerramientasDesarrollo {
         } catch (Exception e) {
             return "[Error al escribir] " + e.getMessage();
         }
-    }
+    }*/
     
-    private final RestTemplate restTemplate = new RestTemplate();
+    /*private final RestTemplate restTemplate = new RestTemplate();
     private static final String URL_QA_INTERNO = "http://localhost:8083/api/qa/interno/perfeccionar";
 
     @Tool("Obligatorio usar antes de entregar el código final. Envía tu código fuente al agente de QA para que lo audite y corrija. QA te devolverá la versión perfeccionada.")
@@ -76,7 +76,7 @@ public class HerramientasDesarrollo {
             System.out.println("❌ [DESARROLLO] Error de red al contactar a QA: " + e.getMessage());
             return "QA no está disponible. Debes revisar tu propio código minuciosamente y entregarlo bajo tu propia responsabilidad.";
         }
-    }
+    }*/
 
 
     // 🔒 MÉTODO DE SEGURIDAD INTERNO (No expuesto al modelo)
