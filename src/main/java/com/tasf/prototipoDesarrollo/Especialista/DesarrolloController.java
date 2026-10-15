@@ -38,13 +38,14 @@ public class DesarrolloController {
                 String nombreHerramienta = nodo.get("name").asText();
                 JsonNode argumentos = nodo.get("arguments");
 
-                if ("escribirArchivo".equals(nombreHerramienta)) {
+                /*if ("escribirArchivo".equals(nombreHerramienta)) {
                     return herramientas.escribirArchivo(
                             argumentos.get("ruta").asText(), 
                             argumentos.get("contenido").asText()
                     );
                 } 
-                else if ("leerArchivoProyecto".equals(nombreHerramienta)) {
+                else*/ 
+                if ("leerArchivoProyecto".equals(nombreHerramienta)) {
                 	String contenidoArchivo = herramientas.leerArchivoProyecto(
                 	        argumentos.get("nombreArchivo").asText(), 
                 	        argumentos.get("nombreDir").asText()
